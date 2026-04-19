@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p properties/al-arid-modern-villa properties/al-yasmin-duplex-apartment properties/al-narjis-family-villa properties/an-nafal-garden-apartment properties/al-malqa-penthouse properties/hittin-land-plot properties/al-arid-townhouse properties/al-malqa-commercial-office hero about _placeholder)",
+      "Bash(touch __TRACKED_VAR__/.gitkeep)"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #202a44;
+  --gold: #ac9055;
+  --mute: #79858d;
+  --cream: #faf8f4;
+  --ink: #1a1f2e;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  background: #ffffff;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+html[dir="rtl"] body {
+  line-height: 1.7;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-shell px-5 sm:px-8 lg:px-10;
+  }
+  .eyebrow {
+    @apply text-xs sm:text-sm font-medium uppercase tracking-[0.18em] text-gold;
+  }
+  html[dir="rtl"] .eyebrow {
+    @apply tracking-[0.08em];
+  }
+  .h-display {
+    @apply font-bold tracking-tightest text-navy text-[38px] leading-[1.05] sm:text-5xl lg:text-[64px];
+  }
+  .h-section {
+    @apply font-bold tracking-tightest text-navy text-[28px] leading-[1.15] sm:text-4xl lg:text-[44px];
+  }
+  .body-lead {
+    @apply text-base sm:text-lg text-ink/80 leading-relaxed;
+  }
+  .hairline {
+    @apply h-px w-12 bg-gold;
+  }
+}
+
+/* subtle brand pattern */
+.bg-pattern {
+  background-image: url("/brand/pattern.svg");
+  background-repeat: repeat;
+  background-size: 180px;
+  opacity: 0.06;
+}
+
+/* mirror selected icons in RTL */
+html[dir="rtl"] .icon-flip {
+  transform: scaleX(-1);
+}

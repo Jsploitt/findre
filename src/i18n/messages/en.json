@@ -1,0 +1,208 @@
+{
+  "nav": {
+    "home": "Home",
+    "properties": "Properties",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "cta": {
+    "whatsapp": "Chat on WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "browse": "Browse properties",
+    "viewAll": "View all properties",
+    "viewDetails": "View details",
+    "learnMore": "Learn more",
+    "contactUs": "Contact us",
+    "getInTouch": "Get in touch",
+    "sendMessage": "Send message",
+    "openInMaps": "Open in Google Maps"
+  },
+  "status": {
+    "available": "Available",
+    "booked": "Booked",
+    "reserved": "Reserved"
+  },
+  "type": {
+    "villa": "Villa",
+    "apartment": "Apartment",
+    "land": "Land",
+    "commercial": "Commercial",
+    "townhouse": "Townhouse"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Northern Riyadh · Curated real estate",
+      "title": "Property in Riyadh, selected with care.",
+      "subtitle": "FindRE is a boutique real estate studio focused on Northern Riyadh. Discover premium residences, direct from people who know the neighborhoods."
+    },
+    "valueProps": {
+      "title": "Why FindRE",
+      "subtitle": "Three simple promises that shape every listing we share.",
+      "items": {
+        "expertise": {
+          "title": "Local expertise",
+          "body": "Deep knowledge of Al Arid, Al Yasmin, Al Narjis, An Nafal and the districts that define Northern Riyadh."
+        },
+        "curated": {
+          "title": "Curated, not crowded",
+          "body": "Every property is vetted in person. No stale listings, no surprises on the visit."
+        },
+        "direct": {
+          "title": "Direct human contact",
+          "body": "Reach us on WhatsApp and speak with a real advisor — not a funnel, not a bot."
+        }
+      }
+    },
+    "featured": {
+      "title": "Featured properties",
+      "subtitle": "A small selection of what's on the market right now."
+    },
+    "how": {
+      "title": "How it works",
+      "subtitle": "A direct path from browsing to move-in.",
+      "steps": {
+        "browse": { "title": "Browse", "body": "Scan our curated list and find properties that match your brief." },
+        "check": { "title": "Check availability", "body": "Each listing shows a clear, up-to-date availability status." },
+        "contact": { "title": "Contact us", "body": "Reach out on WhatsApp or send a request — we respond quickly." }
+      }
+    },
+    "aboutStrip": {
+      "eyebrow": "About FindRE",
+      "title": "A new standard for Riyadh real estate.",
+      "body": "We built FindRE for buyers and tenants who expect clarity, speed, and a human voice at the other end of the conversation."
+    },
+    "ctaSection": {
+      "title": "Found something you like?",
+      "body": "Start a WhatsApp conversation with our team — or send an inquiry and we'll reply the same day."
+    }
+  },
+  "listings": {
+    "title": "Properties",
+    "subtitle": "Curated residences across Northern Riyadh.",
+    "count": "{count, plural, =0 {No properties} =1 {# property} other {# properties}}",
+    "filter": {
+      "open": "Filters",
+      "apply": "Apply",
+      "reset": "Reset",
+      "clearAll": "Clear all",
+      "type": "Type",
+      "district": "District",
+      "bedrooms": "Bedrooms",
+      "status": "Status",
+      "sort": "Sort",
+      "search": "Search by title or district",
+      "any": "Any"
+    },
+    "sort": {
+      "newest": "Newest",
+      "priceAsc": "Price: low to high",
+      "priceDesc": "Price: high to low"
+    },
+    "empty": {
+      "title": "No properties match these filters.",
+      "body": "Try resetting filters or contact us directly — we may have off-market options."
+    }
+  },
+  "property": {
+    "notFound": "Property not found.",
+    "backToListings": "Back to properties",
+    "description": "Description",
+    "details": "Property details",
+    "amenities": "Amenities",
+    "location": "Location",
+    "related": "Similar properties",
+    "inquire": "Inquire about this property",
+    "inquireBody": "Start a WhatsApp chat with our team — pre-filled with this listing.",
+    "priceOnRequest": "Price on request",
+    "facts": {
+      "area": "Area",
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
+      "parking": "Parking",
+      "year": "Year built",
+      "furnished": "Furnished",
+      "type": "Type",
+      "furnishedYes": "Yes",
+      "furnishedNo": "No"
+    },
+    "whatsappMessage": "Hello FindRE, I'm interested in {title} ({url})."
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "Real estate, delivered with clarity.",
+      "body": "FindRE is a Riyadh-based real estate studio. We work with a small, carefully chosen set of properties, and we handle every inquiry ourselves."
+    },
+    "story": {
+      "title": "Our story",
+      "body": "We started FindRE because finding a home in Riyadh shouldn't feel like chasing phantom listings. Our team brings years of neighborhood-level experience to every client we serve."
+    },
+    "mission": { "title": "Mission", "body": "Give every client a calm, honest path to the right property." },
+    "vision": { "title": "Vision", "body": "The most trusted boutique real estate name in Northern Riyadh." },
+    "values": { "title": "Values", "body": "Clarity, discretion, and genuine local knowledge." },
+    "pillars": {
+      "title": "What we stand for",
+      "items": {
+        "rooted": { "title": "Rooted in Northern Riyadh", "body": "We know these streets, buildings, and neighborhoods in person." },
+        "transparent": { "title": "Transparent listings", "body": "Real status, real photos, real prices — always." },
+        "human": { "title": "Direct human contact", "body": "A real advisor answers every WhatsApp message." }
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "We're one message away.",
+      "body": "Reach us on WhatsApp for the fastest response, or send a detailed request below."
+    },
+    "form": {
+      "name": "Full name",
+      "phone": "Phone",
+      "email": "Email (optional)",
+      "message": "How can we help?",
+      "reference": "Property reference (optional)",
+      "submit": "Send message",
+      "success": "Thank you — we'll be in touch shortly.",
+      "error": "Something went wrong. Please try again or message us on WhatsApp."
+    },
+    "info": {
+      "whatsappTitle": "WhatsApp",
+      "whatsappBody": "Fastest response. Typically within the hour during business days.",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business hours",
+      "hoursValue": "Sun–Thu · 9:00 – 19:00",
+      "office": "Office",
+      "officeValue": "Northern Riyadh, Saudi Arabia"
+    }
+  },
+  "footer": {
+    "tagline": "Boutique real estate in Northern Riyadh.",
+    "explore": "Explore",
+    "contact": "Contact",
+    "language": "Language",
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "label": "Language",
+    "ar": "العربية",
+    "en": "English",
+    "switchTo": "Switch to {lang}"
+  },
+  "amenities": {
+    "pool": "Private pool",
+    "garden": "Garden",
+    "maidRoom": "Maid's room",
+    "driverRoom": "Driver's room",
+    "majlis": "Majlis",
+    "elevator": "Elevator",
+    "covered_parking": "Covered parking",
+    "smart_home": "Smart home",
+    "central_ac": "Central AC",
+    "kitchen_fitted": "Fitted kitchen",
+    "gym": "Gym",
+    "security_24_7": "24/7 security"
+  }
+}

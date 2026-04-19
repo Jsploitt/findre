@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" width="240" height="64" role="img" aria-label="FindRE">
+  <g fill="none" stroke="#AC9055" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M12 36 L32 18 L52 36 V54 H12 Z"/>
+    <rect x="24" y="34" width="16" height="16"/>
+    <line x1="40" y1="50" x2="50" y2="60" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="70" y="42" font-family="Montserrat, Arial, sans-serif" font-size="22" font-weight="700" fill="#202A44" letter-spacing="0.5">FindRE</text>
+</svg>
