@@ -17,7 +17,7 @@ export function Footer() {
     <footer className="bg-navy text-white/80">
       <div className="shell py-16 grid gap-10 md:grid-cols-4">
         <div className="space-y-4 md:col-span-2">
-          <Logo variant="light" className="h-9 w-auto" />
+          <Logo variant="light" className="h-14 w-auto" />
           <p className="max-w-xs text-sm leading-relaxed text-white/70">
             {t("tagline")}
           </p>

@@ -45,7 +45,7 @@ export function Header() {
     >
       <div className="shell flex h-18 items-center justify-between py-4">
         <Link href="/" aria-label="FindRE" className="flex items-center">
-          <Logo className="h-9 w-auto" />
+          <Logo className="h-14 w-auto" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8" aria-label="Primary">
