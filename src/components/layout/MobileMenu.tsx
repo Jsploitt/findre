@@ -35,13 +35,24 @@ export function MobileMenu({ open, onClose, nav }: Props) {
     return () => window.removeEventListener("keydown", onKey);
   }, [open, onClose]);
 
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 1024px)");
+    const handleChange = (e: MediaQueryListEvent) => {
+      if (e.matches) onClose();
+    };
+
+    if (media.matches && open) onClose();
+    media.addEventListener("change", handleChange);
+    return () => media.removeEventListener("change", handleChange);
+  }, [open, onClose]);
+
   return (
     <>
       <div
         onClick={onClose}
         aria-hidden
         className={cn(
-          "fixed inset-0 z-50 bg-navy/40 backdrop-blur-sm transition-opacity duration-200",
+          "fixed inset-0 z-50 bg-navy/40 backdrop-blur-sm transition-opacity duration-200 lg:hidden",
           open ? "opacity-100" : "opacity-0 pointer-events-none",
         )}
       />
@@ -50,7 +61,7 @@ export function MobileMenu({ open, onClose, nav }: Props) {
         aria-modal="true"
         aria-label={t("menu")}
         className={cn(
-          "fixed z-50 top-0 bottom-0 end-0 w-[88%] max-w-sm bg-white shadow-lift transition-transform duration-300 ease-smooth flex flex-col",
+          "fixed z-50 top-0 bottom-0 end-0 w-[88%] max-w-sm bg-white shadow-lift transition-transform duration-300 ease-smooth flex flex-col lg:hidden",
           open ? "translate-x-0" : "rtl:-translate-x-full ltr:translate-x-full",
         )}
       >

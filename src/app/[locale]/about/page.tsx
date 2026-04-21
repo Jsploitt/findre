@@ -58,7 +58,7 @@ export default async function AboutPage({ params }: Props) {
           </div>
           <div className="order-1 lg:order-2 relative aspect-[4/5] rounded-lg overflow-hidden bg-cream">
             <Image
-              src="/images/about/story.jpg"
+              src="/images/findre-test-photos/4.jpeg"
               alt=""
               fill
               sizes="(max-width:1024px) 100vw, 50vw"

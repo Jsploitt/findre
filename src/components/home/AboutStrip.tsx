@@ -27,13 +27,13 @@ export function AboutStrip() {
         </div>
         <div className="grid grid-cols-2 gap-3 sm:gap-4">
           <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-white/5 row-span-2">
-            <Image src="/images/about/a1.jpg" alt="" fill sizes="(max-width:1024px) 50vw, 25vw" className="object-cover" />
+            <Image src="/images/findre-test-photos/1.jpeg" alt="" fill sizes="(max-width:1024px) 50vw, 25vw" className="object-cover" />
           </div>
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-white/5">
-            <Image src="/images/about/a2.jpg" alt="" fill sizes="25vw" className="object-cover" />
+            <Image src="/images/findre-test-photos/2.jpeg" alt="" fill sizes="25vw" className="object-cover" />
           </div>
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-white/5">
-            <Image src="/images/about/a3.jpg" alt="" fill sizes="25vw" className="object-cover" />
+            <Image src="/images/findre-test-photos/3.jpeg" alt="" fill sizes="25vw" className="object-cover" />
           </div>
         </div>
       </Container>
