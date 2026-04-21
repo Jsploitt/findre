@@ -28,10 +28,10 @@ export const properties: Property[] = [
     furnished: false,
     amenities: ["majlis", "maidRoom", "driverRoom", "garden", "smart_home", "central_ac"],
     images: [
-      { src: "/images/properties/al-arid-modern-villa/01.jpg", alt: { ar: "واجهة الفيلا", en: "Villa facade" } },
-      { src: "/images/properties/al-arid-modern-villa/02.jpg", alt: { ar: "صالة المعيشة", en: "Living area" } },
-      { src: "/images/properties/al-arid-modern-villa/03.jpg", alt: { ar: "المطبخ", en: "Kitchen" } },
-      { src: "/images/properties/al-arid-modern-villa/04.jpg", alt: { ar: "الحديقة", en: "Garden" } },
+      { src: "/images/findre-test-photos/1.jpeg", alt: { ar: "صورة داخلية 1", en: "Interior photo 1" } },
+      { src: "/images/findre-test-photos/2.jpeg", alt: { ar: "صورة داخلية 2", en: "Interior photo 2" } },
+      { src: "/images/findre-test-photos/3.jpeg", alt: { ar: "صورة داخلية 3", en: "Interior photo 3" } },
+      { src: "/images/findre-test-photos/4.jpeg", alt: { ar: "صورة داخلية 4", en: "Interior photo 4" } },
     ],
     location: {
       lat: 24.9215,
@@ -65,9 +65,9 @@ export const properties: Property[] = [
     furnished: true,
     amenities: ["elevator", "covered_parking", "smart_home", "kitchen_fitted", "central_ac"],
     images: [
-      { src: "/images/properties/al-yasmin-duplex-apartment/01.jpg", alt: { ar: "المدخل", en: "Entrance" } },
-      { src: "/images/properties/al-yasmin-duplex-apartment/02.jpg", alt: { ar: "الصالة", en: "Lounge" } },
-      { src: "/images/properties/al-yasmin-duplex-apartment/03.jpg", alt: { ar: "غرفة النوم الرئيسية", en: "Master bedroom" } },
+      { src: "/images/findre-test-photos/5.jpeg", alt: { ar: "صورة داخلية 5", en: "Interior photo 5" } },
+      { src: "/images/findre-test-photos/6.jpeg", alt: { ar: "صورة داخلية 6", en: "Interior photo 6" } },
+      { src: "/images/findre-test-photos/7.jpeg", alt: { ar: "صورة داخلية 7", en: "Interior photo 7" } },
     ],
     location: {
       lat: 24.8392,
@@ -101,8 +101,8 @@ export const properties: Property[] = [
     furnished: false,
     amenities: ["majlis", "maidRoom", "driverRoom", "garden", "pool", "security_24_7"],
     images: [
-      { src: "/images/properties/al-narjis-family-villa/01.jpg", alt: { ar: "الواجهة الأمامية", en: "Front facade" } },
-      { src: "/images/properties/al-narjis-family-villa/02.jpg", alt: { ar: "المسبح", en: "Pool" } },
+      { src: "/images/findre-test-photos/8.jpeg", alt: { ar: "صورة داخلية 8", en: "Interior photo 8" } },
+      { src: "/images/findre-test-photos/9.jpeg", alt: { ar: "صورة داخلية 9", en: "Interior photo 9" } },
     ],
     location: {
       lat: 24.8601,
@@ -136,8 +136,10 @@ export const properties: Property[] = [
     furnished: false,
     amenities: ["garden", "elevator", "covered_parking", "kitchen_fitted", "central_ac"],
     images: [
-      { src: "/images/properties/an-nafal-garden-apartment/01.jpg", alt: { ar: "الصالة", en: "Living room" } },
-      { src: "/images/properties/an-nafal-garden-apartment/02.jpg", alt: { ar: "الحديقة", en: "Garden" } },
+      { src: "/images/findre-test-photos/10.jpeg", alt: { ar: "صورة داخلية 10", en: "Interior photo 10" } },
+      { src: "/images/findre-test-photos/11.jpeg", alt: { ar: "صورة داخلية 11", en: "Interior photo 11" } },
+      { src: "/images/findre-test-photos/12.jpeg", alt: { ar: "صورة داخلية 12", en: "Interior photo 12" } },
+      { src: "/images/findre-test-photos/13.jpeg", alt: { ar: "صورة داخلية 13", en: "Interior photo 13" } },
     ],
     location: {
       lat: 24.7993,
@@ -170,8 +172,8 @@ export const properties: Property[] = [
     furnished: true,
     amenities: ["elevator", "covered_parking", "gym", "smart_home", "security_24_7", "central_ac"],
     images: [
-      { src: "/images/properties/al-malqa-penthouse/01.jpg", alt: { ar: "الإطلالة", en: "View" } },
-      { src: "/images/properties/al-malqa-penthouse/02.jpg", alt: { ar: "صالة الاستقبال", en: "Reception" } },
+      { src: "/images/findre-test-photos/14.jpeg", alt: { ar: "صورة داخلية 14", en: "Interior photo 14" } },
+      { src: "/images/findre-test-photos/15.jpeg", alt: { ar: "صورة داخلية 15", en: "Interior photo 15" } },
     ],
     location: {
       lat: 24.7738,
