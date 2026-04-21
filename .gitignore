@@ -3,15 +3,17 @@ node_modules/
 .pnp/
 .pnp.*
 
-# Build outputs
+# Build and coverage outputs
 .next/
 out/
 dist/
 build/
 coverage/
+.nyc_output/
 
-# Caches
+# Tooling caches
 .npm/
+.pnpm-store/
 .cache/
 .parcel-cache/
 .turbo/
@@ -26,20 +28,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Environment variables
+# Environment files
 .env*
 !.env.example
 
 # Deployment
 .vercel/
 
-# Test outputs
+# Test reports
 playwright-report/
 test-results/
 
 # OS files
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # IDE files
 .idea/
@@ -48,3 +51,6 @@ Thumbs.db
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
+
+# Agents
+.claude/
