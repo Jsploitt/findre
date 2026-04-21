@@ -20,6 +20,11 @@ export function buildWhatsAppLink({
   propertyUrl,
   customMessage,
 }: BuildLinkOptions): string {
+  // Generic CTAs should open the WhatsApp catalog directly.
+  if (!property && !customMessage) {
+    return site.whatsappCatalogUrl;
+  }
+
   let text = customMessage ?? defaultMessage[locale];
   if (property) {
     const title = property.title[locale];

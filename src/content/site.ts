@@ -2,6 +2,7 @@ export const site = {
   name: "FindRE",
   domain: "findre.co",
   whatsappNumber: "966500000000",
+  whatsappCatalogUrl: "https://wa.me/c/966551817337",
   phoneDisplay: "+966 50 000 0000",
   email: "hello@findre.co",
   address: {
