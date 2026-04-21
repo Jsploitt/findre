@@ -201,7 +201,10 @@ export const properties: Property[] = [
     area: 625,
     amenities: [],
     images: [
-      { src: "/images/properties/hittin-land-plot/01.jpg", alt: { ar: "الأرض", en: "Land plot" } },
+      {
+        src: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80",
+        alt: { ar: "الأرض", en: "Land plot" },
+      },
     ],
     location: {
       lat: 24.7691,
@@ -234,8 +237,14 @@ export const properties: Property[] = [
     furnished: false,
     amenities: ["covered_parking", "kitchen_fitted", "central_ac", "smart_home"],
     images: [
-      { src: "/images/properties/al-arid-townhouse/01.jpg", alt: { ar: "الواجهة", en: "Facade" } },
-      { src: "/images/properties/al-arid-townhouse/02.jpg", alt: { ar: "الصالة", en: "Living" } },
+      {
+        src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80",
+        alt: { ar: "الواجهة", en: "Facade" },
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1600&q=80",
+        alt: { ar: "الصالة", en: "Living" },
+      },
     ],
     location: {
       lat: 24.9183,
@@ -265,7 +274,10 @@ export const properties: Property[] = [
     yearBuilt: 2022,
     amenities: ["elevator", "covered_parking", "central_ac", "security_24_7"],
     images: [
-      { src: "/images/properties/al-malqa-commercial-office/01.jpg", alt: { ar: "المكتب", en: "Office" } },
+      {
+        src: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+        alt: { ar: "المكتب", en: "Office" },
+      },
     ],
     location: {
       lat: 24.7754,

@@ -5,13 +5,14 @@ import { useLocale } from "next-intl";
 import { PropertyImage } from "./PropertyImage";
 import type { Property } from "@/types/property";
 import { cn } from "@/lib/cn";
+import { DEFAULT_PROPERTY_PLACEHOLDER } from "@/lib/placeholders";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 export function PropertyGallery({ property }: { property: Property }) {
   const locale = useLocale() as "ar" | "en";
   const images = property.images.length > 0
     ? property.images
-    : [{ src: "", alt: property.title }];
+    : [{ src: DEFAULT_PROPERTY_PLACEHOLDER, alt: property.title }];
   const [active, setActive] = useState(0);
   const [lightbox, setLightbox] = useState(false);
 
@@ -39,7 +40,7 @@ export function PropertyGallery({ property }: { property: Property }) {
           className="relative md:col-span-3 md:row-span-2 aspect-[4/3] md:aspect-auto md:h-[520px] rounded-lg overflow-hidden bg-mute-100 group"
         >
           <PropertyImage
-            src={images[active]?.src ?? ""}
+            src={images[active]?.src ?? DEFAULT_PROPERTY_PLACEHOLDER}
             alt={images[active]?.alt[locale] ?? ""}
             fill
             priority
@@ -87,7 +88,7 @@ export function PropertyGallery({ property }: { property: Property }) {
           </button>
           <div className="relative w-full max-w-5xl aspect-[4/3]">
             <PropertyImage
-              src={images[active]?.src ?? ""}
+              src={images[active]?.src ?? DEFAULT_PROPERTY_PLACEHOLDER}
               alt={images[active]?.alt[locale] ?? ""}
               fill
               sizes="100vw"

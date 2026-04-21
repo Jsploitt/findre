@@ -6,6 +6,7 @@ import { formatArea, formatPrice } from "@/lib/formatters";
 import type { Property } from "@/types/property";
 import { BedDouble, Bath, Ruler, MapPin } from "lucide-react";
 import { cn } from "@/lib/cn";
+import { DEFAULT_PROPERTY_PLACEHOLDER } from "@/lib/placeholders";
 
 export function PropertyCard({ property }: { property: Property }) {
   const locale = useLocale() as "ar" | "en";
@@ -21,7 +22,7 @@ export function PropertyCard({ property }: { property: Property }) {
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-mute-100">
         <PropertyImage
-          src={property.images[0]?.src ?? ""}
+          src={property.images[0]?.src ?? DEFAULT_PROPERTY_PLACEHOLDER}
           alt={property.images[0]?.alt[locale] ?? property.title[locale]}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

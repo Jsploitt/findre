@@ -1,0 +1,2 @@
+export const DEFAULT_PROPERTY_PLACEHOLDER =
+  "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80";
