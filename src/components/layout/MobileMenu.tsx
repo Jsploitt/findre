@@ -66,7 +66,7 @@ export function MobileMenu({ open, onClose, nav }: Props) {
         )}
       >
         <div className="flex items-center justify-between px-5 py-4 border-b border-mute-100">
-          <Logo className="h-12 w-auto" />
+          <Logo className="h-9 w-auto" />
           <button
             type="button"
             onClick={onClose}

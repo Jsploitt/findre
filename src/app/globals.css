@@ -59,8 +59,9 @@ html[dir="rtl"] body {
 /* subtle brand pattern */
 .bg-pattern {
   background-image: url("/brand/pattern.svg");
-  background-repeat: repeat;
-  background-size: 180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   opacity: 0.06;
 }
 

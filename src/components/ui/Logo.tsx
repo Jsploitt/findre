@@ -14,7 +14,7 @@ export function Logo({ variant = "dark", className }: LogoProps) {
         alt="FindRE"
         width={64}
         height={64}
-        className={cn("h-8 w-8", className)}
+        className={cn("h-6 w-6", className)}
       />
     );
   }
@@ -26,11 +26,7 @@ export function Logo({ variant = "dark", className }: LogoProps) {
       width={773}
       height={323}
       priority
-      className={cn(
-        "h-8 w-auto object-contain",
-        variant === "dark" && "drop-shadow-[0_0_1px_rgba(32,42,68,0.8)]",
-        className,
-      )}
+      className={cn("h-6 w-auto object-contain", className)}
     />
   );
 }
