@@ -28,6 +28,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        arabic: ["var(--font-arabic)", "system-ui", "sans-serif"],
       },
       borderRadius: {
         sm: "8px",

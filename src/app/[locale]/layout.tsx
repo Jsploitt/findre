@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Tajawal } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -14,6 +14,13 @@ const montserrat = Montserrat({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
+  display: "swap",
+});
+
+const tajawal = Tajawal({
+  subsets: ["arabic", "latin"],
+  weight: ["400", "500", "700", "800"],
+  variable: "--font-arabic",
   display: "swap",
 });
 
@@ -48,7 +55,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html
       lang={locale}
       dir={dir}
-      className={montserrat.variable}
+      className={`${montserrat.variable} ${tajawal.variable}`}
       suppressHydrationWarning
     >
       <body className="min-h-dvh flex flex-col bg-white" suppressHydrationWarning>
