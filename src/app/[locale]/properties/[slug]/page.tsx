@@ -10,21 +10,27 @@ import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { formatPrice } from "@/lib/formatters";
 import { Link } from "@/i18n/routing";
-import { getProperty, getRelatedProperties, properties } from "@/content/properties";
+import { getProperty, getRelatedProperties, getAllSlugs } from "@/lib/properties";
 import { MapPin, ArrowLeft, ExternalLink } from "lucide-react";
 import { site } from "@/content/site";
+
+export const revalidate = 60;
+export const dynamicParams = true;
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
 }
 
-export function generateStaticParams() {
-  return properties.flatMap((p) => ["ar", "en"].map((locale) => ({ locale, slug: p.slug })));
+export async function generateStaticParams() {
+  const slugs = await getAllSlugs();
+  return slugs.flatMap((slug) =>
+    ["ar", "en"].map((locale) => ({ locale, slug })),
+  );
 }
 
 export async function generateMetadata({ params }: Props) {
   const { locale, slug } = await params;
-  const property = getProperty(slug);
+  const property = await getProperty(slug);
   if (!property) return {};
   return {
     title: property.title[locale as "ar" | "en"],
@@ -36,7 +42,7 @@ export default async function PropertyPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
   const l = locale as "ar" | "en";
-  const property = getProperty(slug);
+  const property = await getProperty(slug);
   if (!property) notFound();
 
   const t = await getTranslations("property");
@@ -46,7 +52,7 @@ export default async function PropertyPage({ params }: Props) {
   const price = formatPrice(property.price, l);
   const url = `https://${site.domain}/${lo}/properties/${property.slug}`;
   const waLink = buildWhatsAppLink({ locale: l, property, propertyUrl: url });
-  const related = getRelatedProperties(slug, 3);
+  const related = await getRelatedProperties(slug, 3);
 
   return (
     <>
@@ -106,6 +112,15 @@ export default async function PropertyPage({ params }: Props) {
                     </li>
                   ))}
                 </ul>
+              </section>
+            )}
+
+            {property.permitNumber && (
+              <section>
+                <h2 className="text-xl font-semibold text-navy mb-2">{t("permitNumber")}</h2>
+                <p className="text-sm font-mono text-mute border border-mute-100 bg-cream rounded-md px-4 py-2 inline-block">
+                  {property.permitNumber}
+                </p>
               </section>
             )}
 

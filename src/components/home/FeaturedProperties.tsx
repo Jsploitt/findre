@@ -1,15 +1,16 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Link } from "@/i18n/routing";
 import { PropertyGrid } from "@/components/property/PropertyGrid";
-import { getFeaturedProperties } from "@/content/properties";
+import { getFeaturedProperties } from "@/lib/properties";
 import { ArrowRight } from "lucide-react";
 
-export function FeaturedProperties() {
-  const t = useTranslations("home.featured");
-  const tc = useTranslations("cta");
-  const items = getFeaturedProperties(6);
+export async function FeaturedProperties() {
+  const t = await getTranslations("home.featured");
+  const tc = await getTranslations("cta");
+  const items = await getFeaturedProperties(6);
+
   return (
     <section className="py-24 sm:py-28 bg-cream">
       <Container>

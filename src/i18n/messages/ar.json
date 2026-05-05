@@ -127,6 +127,7 @@
       "furnishedYes": "نعم",
       "furnishedNo": "لا"
     },
+    "permitNumber": "رقم التصريح الإعلان العقاري",
     "whatsappMessage": "مرحبًا FindRE، أنا مهتم بـ {title} ({url})."
   },
   "about": {

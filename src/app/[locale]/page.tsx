@@ -1,4 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
+
+export const revalidate = 60;
 import { Hero } from "@/components/home/Hero";
 import { ValueProps } from "@/components/home/ValueProps";
 import { FeaturedProperties } from "@/components/home/FeaturedProperties";

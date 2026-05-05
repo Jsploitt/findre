@@ -127,6 +127,7 @@
       "furnishedYes": "Yes",
       "furnishedNo": "No"
     },
+    "permitNumber": "Advertising Permit Number",
     "whatsappMessage": "Hello FindRE, I'm interested in {title} ({url})."
   },
   "about": {
