@@ -16,6 +16,7 @@ export interface Property {
   slug: string;
   title: LocalizedString;
   description: LocalizedString;
+  shortDescription?: LocalizedString;
   type: PropertyType;
   status: PropertyStatus;
   district: LocalizedString;
@@ -35,5 +36,6 @@ export interface Property {
   images: { src: string; alt: LocalizedString }[];
   location: { lat: number; lng: number; mapUrl: string };
   featured?: boolean;
+  permitNumber?: string;
   createdAt: string;
 }
